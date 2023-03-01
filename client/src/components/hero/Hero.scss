@@ -1,0 +1,47 @@
+.Hero{
+    height: 90vh;
+    background-image: url("../../assets/banner.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-bottom: 5px solid black;
+    box-shadow: 10px 0 20px black;
+
+    .hero-content{
+        height: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap: 10px;
+        text-align: center;
+
+        .heading{
+            color: white;
+            font-size: 3rem;
+        }
+
+        .sub-heading{
+            color: whitesmoke;
+            font-size: 1.2rem;
+        }
+
+        .cta{
+            margin-top: 16px;
+        }
+
+
+    }
+}
+
+@media screen  and (max-width:640px){
+    .Hero{
+        height: 60vh;
+
+        .hero-content{
+            .heading{
+                font-size: 2rem;
+            }
+            .sub-heading{
+                font-size: 1rem;
+            }
+        }
+    }
+}
